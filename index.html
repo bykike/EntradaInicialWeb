@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113022604-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-113022604-1');
+        </script>
+
+        <script>
+        /* ésto comprueba la localStorage si ya tiene la variable guardada */
+        function compruebaAceptaCookies() {
+          if(localStorage.aceptaCookies == 'true'){
+            cajacookies.style.display = 'none';
+          }
+        }
+
+        /* aquí guardamos la variable de que se ha
+        aceptado el uso de cookies así no mostraremos
+        el mensaje de nuevo */
+        function aceptarCookies() {
+          localStorage.aceptaCookies = 'true';
+          cajacookies.style.display = 'none';
+        }
+
+        /* ésto se ejecuta cuando la web está cargada */
+        $(document).ready(function () {
+          compruebaAceptaCookies();
+        });
+        </script>
+
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>PRITEC Electronics</title>
+
+        <!-- Icon css link -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendors/elegant-icon/style.css" rel="stylesheet">
+        <link href="vendors/themify-icon/themify-icons.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Rev slider css -->
+        <link href="vendors/revolution/css/settings.css" rel="stylesheet">
+        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
+        <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
+        <link href="vendors/animate-css/animate.css" rel="stylesheet">
+
+        <!-- Extra plugin css -->
+        <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+
+
+
+        .aparatos-i, .iluminacion-i, .puntoscarga-i  {
+          width: 198px;
+          height: 100px;
+        }
+
+        .div-img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .div-img.hidden {
+          overflow: hidden;
+        }
+        .div-img .img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          transform: scale(1);
+          -ms-transform: scale(1);
+          -moz-transform: scale(1);
+          -webkit-transform: scale(1);
+          -o-transform: scale(1);
+          -webkit-transition: all 500ms ease-in-out;
+          -moz-transition: all 500ms ease-in-out;
+          -ms-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out;
+        }
+        .div-img:hover .img {
+          transform: scale(.9);
+          -ms-transform: scale(.9);
+          -moz-transform: scale(.9);
+          -webkit-transform: scale(.9);
+          -o-transform: scale(.9);
+        }
+
+
+        #cajacookies {
+          box-shadow: 0px 0px 5px 5px #808080;
+          background-color: white;
+          color: black;
+          padding: 10px;
+          margin-left: -15px;
+          margin-right: -15px;
+          margin-bottom: 70px;
+          position: fixed;
+          top: 0px;
+          width: 100%;
+        }
+
+        #cajacookies button {
+          color: black;
+        }
+
+    </style>
+
+
+    </head>
+    <body>
+
+        <!--================Header Menu Area =================-->
+        <header class="main_menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactar.html">Contactar</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--================End Header Menu Area =================-->
+
+        <div id="cajacookies">
+              <p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button>
+              Éste sitio web usa cookies, si permanece aquí acepta su uso.
+              Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a>.
+              </p>
+        </div>
+
+
+
+        <!--================Slider Area =================-->
+        <section class="main_slider_area">
+
+            <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
+                <ul>
+                    <li data-index="rs-2946" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                        <img src="img/home-slider/verano.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <!-- LAYER NR. 11 -->
+                            <div class="tp-caption Agency-CloseBtn rev-btn "
+                              id="slide-2971-layer-20"
+                              data-x="['center','center','center','center']" data-hoffset="['510','389','270','199']"
+                              data-y="['middle','middle','middle','middle']" data-voffset="['-298','-229','-163','-118']"
+                              data-width="50"
+                              data-height="none"
+                              data-whitespace="nowrap"
+
+                              data-type="button"
+                              data-actions='[{"event":"click","action":"stoplayer","layer":"slide-2971-layer-15","delay":""},{"event":"click","action":"stoplayer","layer":"slide-2971-layer-19","delay":""},{"event":"click","action":"stoplayer","layer":"slide-2971-layer-20","delay":""}]'
+                              data-responsive_offset="on"
+                              data-responsive="off"
+                              data-frames='[{"from":"z:0;rX:0;rY:0;rZ:45deg;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":500,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":500,"to":"auto:auto;","ease":"nothing"},{"frame":"hover","speed":"500","ease":"Power1.easeInOut","to":"o:1;sX:1.1;sY:1.1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);"}]'
+                              data-textAlign="['center','center','center','center']"
+                              data-paddingtop="[0,0,0,0]"
+                              data-paddingright="[0,0,0,0]"
+                              data-paddingbottom="[0,0,0,0]"
+                              data-paddingleft="[0,0,0,0]"
+                              data-lasttriggerstate="reset"
+                              style="z-index: 15; min-width: 50px; max-width: 50px;
+                              white-space: nowrap;text-transform:left;outline:none;box-shadow:none;
+                              box-sizing:border-box;-moz-box-sizing:border-box;
+                              -webkit-box-sizing:border-box;cursor:pointer;font-size: 24px;"><i class="fa fa-close"></i>
+                            </div>
+
+                            <div class="tp-caption tp-resizeme secand_text"
+                                data-x="['center','center','center','center','center','center']"
+                                data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['0','0','0','0','0']"
+                                data-fontsize="['48','48','48','28','28','22']"
+                                data-lineheight="['60','60','60','36','36','30']"
+                                data-width="100%"
+                                data-height="none"
+                                data-whitespace="normal"
+                                data-type="text"
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['center','center','center','center','center','center']"
+
+                                style="z-index: 8;font-family:'Poppins', sans-serif;font-weight:700;color:#fff;">
+                                y en Agosto nos organizamos para<br />
+                                poder seguir ofreciéndoles el mejor servicio.
+                            </div>
+
+                            <div class="tp-caption tp-resizeme slider_button"
+                                data-x="['center','center','center','center','center','center']"
+                                data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['130','130','130','100','100','100']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text"
+                                data-responsive_offset="on"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['center','center','center','center','center','center']">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li data-index="rs-2947" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                        <img src="img/home-slider/slider-1.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <div class="tp-caption tp-resizeme secand_text"
+                                data-x="['center','center','center','center','center','center']"
+                                data-hoffset="['0','80','80','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['0','0','0','0','0']"
+                                data-fontsize="['48','48','48','28','28','22']"
+                                data-lineheight="['60','60','60','36','36','30']"
+                                data-width="100%"
+                                data-height="none"
+                                data-whitespace="normal"
+                                data-type="text"
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['center','center','center','center','center','center']"
+
+                                style="z-index: 8;font-family:'Poppins', sans-serif;font-weight:700;color:#fff;">Sistemas Electrónicos de Vanguardia.<br />Productos de  última Generación.
+                            </div>
+
+                            <div class="tp-caption tp-resizeme slider_button"
+                                data-x="['center','center','center','center','center','center']"
+                                data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['130','130','130','100','100','100']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text"
+                                data-responsive_offset="on"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['center','center','center','center','center','center']">
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--================End Slider Area =================-->
+
+        <!--================Creative Feature Area =================-->
+        <section class="creative_feature_area">
+            <div class="container">
+                <div class="c_feature_box">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="c_box_item">
+
+                                <div class="aparatos-i">
+                                  <div class="div-img hidden" >
+                                      <a href="http://pritec.com/es/producto/producto.html"><img class="img" src="img/aparatos.jpg"
+                                       title="Ir apartado Aparatos Electrónicos" alt="Ir apartado Aparatos Electrónicos"></a>
+                                  </div>
+                                </div>
+
+                                <br>
+
+                                <a style="color:rgb(66, 139, 215);">Acceda apartado:</a>
+                                <a href="http://pritec.com/es/producto/producto.html"><h4>Aparatos<br> Electrónicos y HIH</h4></a>
+                                <p>Amplia gama de aparatos electrónicos para la higiene industrial y la hostelería, optimizados para ofrecer la máxima eficiencia con un mínimo consumo.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                            <div class="c_box_item">
+
+                              <div class="iluminacion-i">
+                                <div class="div-img hidden" >
+                                    <a href="http://www.priled.eu/es/producto/producto.html"><img class="img" src="img/iluminacion.jpg"
+                                      title="Ir al apartado Regulación, Control, ..." alt="Ir apartado Regulación, Control, ..."></a>
+                                </div>
+                              </div>
+
+                              <br>
+
+                              <a style="color:rgb(66, 139, 215);">Acceda apartado:</a>
+                                <a href="http://www.priled.eu/es/producto/producto.html"><h4>Regulación, Control, Luminarias y Lámparas LED</h4></a>
+                                <p>Todo lo necesario para optimizar la energía empleada en iluminación mediante sensores inteligentes, optoelectrónica avanzada y fuentes lumínicas de alta eficiencia.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="c_box_item">
+
+                              <div class="puntoscarga-i">
+                                <div class="div-img hidden" >
+                                    <a href="http://www.pritec.com/movilidad-electrica/PRITEC-Cat-Movilidad-Electrica.pdf"><img class="img" src="img/puntoscarga.jpg"
+                                      title="Ir apartado Movilidad Eléctrica y ..." alt="Ir apartado Movilidad Eléctrica y ..."></a>
+                                </div>
+                              </div>
+
+                              <br>
+
+                              <a style="color:rgb(66, 139, 215);">Acceda apartado:</a>
+                                <a href="http://www.pritec.com/movilidad-electrica/PRITEC-Cat-Movilidad-Electrica.pdf"><h4>Movilidad Eléctrica <br>y Puntos de Carga</h4></a>
+                                <p>Amplia gama de cables y puntos de carga para vehículo eléctrico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="digital_feature p_100">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="d_feature_text">
+                                <div class="main_title">
+                                    <h2>Somos una empresa <br /> innovadora que apostamos por la eficiencia energética</h2>
+                                </div>
+                                <p>PRITEC Group se encuentra en evolución constante, está siempre en vanguardia ofreciendo soluciones definitivas y buscando satisfacer las necesidades de sus clientes.</p>
+                                <p>Todos nuestros componentes y materias primas utilizadas, cumplen las más extrictas normas de calidad exigidas por el Comité Europeo para la Normalización y Certificación. </p>
+                                <!-- <a class="read_btn" href="#">Read more</a>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d_feature_img">
+                                <img src="img/feature-right.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Creative Feature Area =================-->
+
+
+
+        <!--================Our Service Area =================-->
+        <section class="service_area">
+            <div class="container">
+                <div class="center_title">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Cubrimos varios sectores con relación a nuestra capacidad operativa.</p>
+                </div>
+                <div class="row service_item_inner">
+                    <div class="col-lg-4">
+                        <div class="service_item">
+                            <i class="ti-plug"></i>
+                            <h4>Aparatos<br>Electrónicos y HIH</h4>
+                            <p>Eliminadores eléctricos de insectos, secadores de manos, tratamiento electro físico del agua ...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_item">
+                            <i class="ti-layers"></i>
+                            <h4>Regulación, Control, Luminarias<br>y Lámparas LED</h4>
+                            <p>Luminarias capaces de conseguir hasta un 90% de ahorro energético frente a modelos tradicionales.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_item">
+                            <i class="ti-signal"></i>
+                            <h4>Movilidad Eléctrica<br>y Puntos de Carga</h4>
+                            <p>Ciclomotro eléctrico SWATT 1500, amplia gama de cables y puntos de carga para vehículo eléctrico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Our Service Area =================-->
+
+
+
+        <!--================Latest News Area =================-->
+        <section class="latest_news_area p_100">
+            <div class="container">
+                <div class="b_center_title">
+                    <h2>Últimas novedades</h2>
+                    <p>Presentamos al mercado nuevos productos en donde los podrá ir consultando aquí los más recientes.</p>
+                </div>
+                <div class="l_news_inner">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/blog/l-news/l-news-1.jpg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Sensor IR de movimiento</h4></a>
+                                    <p>-Área con detección de presencia hasta 20 metros.<br>
+                                      -Se puede instalar a una altura entre 2.2 y 6 metros.<br>
+                                      -Sensor crepuscular entre 3-200 Lux.<br>
+                                      -Grado de protección IP65.</p>
+                                    <!-- <a class="more_btn" href="#">>Más información</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/blog/l-news/l-news-2.jpg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Dicro-LED Neophos</h4></a>
+                                    <p>-CRI Índice de reproducción cromática de mayor de 95.<br>
+                                      -5w de potencia.<br>
+                                      -Disponible en 2700k y 4500K.<br>
+                                      -El alto IRC muestra colores realistas y vivos.</p>
+                                    <!-- <a class="more_btn" href="#">Más información</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/blog/l-news/l-news-3.jpg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Nueva Campana PHCF</h4></a>
+                                    <p>-Nueva campana industrial LED.<br>
+                                       -IP65.<br>
+                                       -Driver encapsulado y fácilmente reemplazable.<br>
+                                       -Disponible en 130, 160 y 210 watios de potencia.</p>
+                                    <!-- <a class="more_btn" href="#">Más información</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--================End Latest News Area =================-->
+
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="footer_widgets_area">
+                <div class="container">
+                    <div class="f_widgets_inner row">
+                        <div class="col-lg-6 col-md-12">
+                            <aside class="f_widget subscribe_widget">
+                                <div class="f_w_title">
+                                    <h3>Nuestra Newsletter</h3>
+                                </div>
+                                <p>Suscríbase a nuestra newsletter para recibir las novedades en su email.</p>
+
+                                <div class="input-group">
+                                  <form name="form1" method="post" action="suscripcion/envio-suscripcion.php">
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" width="40%">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary submit_btn" type="submit">Suscribirse</button>
+                                    </span>
+                                  </form>
+                                </div>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/pritecelectronica/"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/Pritecelectroni"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://plus.google.com/u/0/115942148827374377976"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://www.instagram.com/pritecgrupo/"><i class="fa fa-instagram"></i></a></li>
+                                    <!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+                                </ul>
+                            </aside>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12">
+                            <!-- <aside class="f_widget contact_widget"> -->
+                            <aside class="f_widget contact_widget">
+                                <div class="f_w_title">
+                                    <h3>Contacto</h3>
+                                </div>
+                                <a href="#">(+34) 902 88 66 98 | (+34) 96 582 00 02<br></a>
+                                <a href="#">pritec@pritec.com<br></a>
+                                <p>Avda. de la Electrónica, s/n<br>
+                                Canyada de Biar. ALACANT (SPAIN)</p>
+                                <h6>Abierto de 9:00- 13:00h y de 15:30 a 19.00 Lunes-Viernes</h6>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right_area">
+                <div class="container">
+                    <div class="float-md-left">
+                        <h5>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | PRITEC GROUP</h5>
+                    </div>
+                    <div class="float-md-right">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.pritec.com/aviso-legal.html">Aviso Legal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.pritec.com/cookies.html">Cookies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactar.html">Contactar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Rev slider js -->
+        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <!-- Extra plugin css -->
+        <script src="vendors/counterup/jquery.waypoints.min.js"></script>
+        <script src="vendors/counterup/jquery.counterup.min.js"></script>
+        <script src="vendors/counterup/apear.js"></script>
+        <script src="vendors/counterup/countto.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/parallaxer/jquery.parallax-1.1.3.js"></script>
+        <!--Tweets-->
+        <script src="vendors/tweet/tweetie.min.js"></script>
+        <script src="vendors/tweet/script.js"></script>
+
+        <script src="js/theme.js"></script>
+    </body>
+</html>
