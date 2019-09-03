@@ -573,7 +573,7 @@ i:before {
   color: #232d37;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  line-height: 36px;
+  /*line-height: 36px;*/
   padding-bottom: 10px;
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
