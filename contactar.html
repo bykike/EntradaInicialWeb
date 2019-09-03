@@ -35,6 +35,46 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
+
+    <style type="text/css">
+
+    .chek input{
+      /*
+      width: 200px;
+      padding: 60px;
+      background: #daaa4d;
+      */
+    }
+
+    input[type=checkbox]
+    {
+      /* Double-sized Checkboxes */
+      -ms-transform: scale(.5); /* IE */
+      -moz-transform: scale(.5); /* FF */
+      -webkit-transform: scale(.5); /* Safari and Chrome */
+      -o-transform: scale(.5); /* Opera */
+      transform: scale(.5);
+      /* padding: 60px;
+                */
+      vertical-align: 5px;
+
+      margin-top: 3px; /* change to center it */
+      /*
+      background: #daaa4d;
+      border: none;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 12px;
+      color: #b5aec4;
+      width: 200px;
+      */
+    }
+
+    </style>
+
     <body>
 
         <!--================Header Menu Area =================-->
@@ -48,7 +88,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item active"><a class="nav-link" href="">Contactar</a></li>
 
                     </ul>
@@ -170,41 +210,50 @@
                 <div class="container">
                     <div class="f_widgets_inner row">
                         <div class="col-lg-6 col-md-12">
-                            <aside class="f_widget subscribe_widget">
-                                <div class="f_w_title">
-                                    <h3>Nuestra Newsletter</h3>
-                                </div>
-                                <p>Suscríbase a nuestra newsletter para recibir las novedades en su email.</p>
+                          <aside class="f_widget subscribe_widget">
+                              <div class="f_w_title">
+                                  <h3>Nuestra Newsletter</h3>
+                              </div>
+                              <p style="color:white;">Suscríbase a nuestra newsletter para recibir las novedades en su email.</p>
 
-                                <div class="input-group">
-                                  <form name="form1" method="post" action="suscripcion/envio-suscripcion.php">
-                                    <input type="email" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" width="40%">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-secondary submit_btn" type="submit">Suscribirse</button>
-                                    </span>
-                                  </form>
-                                </div>
+                              <div class="input-group">
+                                <form name="form1" method="post" action="suscripcion/envio-suscripcion.php">
+                                  <span class="input-group-btn">
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" width="40%" required>
+                                    <button class="btn btn-secondary submit_btn" type="submit">Suscribirse</button>
+                                  </span>
 
-                                <ul>
-                                    <li><a href="https://www.facebook.com/pritecelectronica/"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/Pritecelectroni"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://plus.google.com/u/0/115942148827374377976"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="https://www.instagram.com/pritecgrupo/"><i class="fa fa-instagram"></i></a></li>
-                                    <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
-                                </ul>
-                            </aside>
+                                  <p>Acepto los términos del servicio <input type="checkbox" name="cb-terminosservicio" class="chek" required></p>
+
+                                </form>
+                              </div>
+                              <ul>
+                                  <li><a href="https://www.facebook.com/pritecelectronica/"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="https://twitter.com/Pritecelectroni"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="https://plus.google.com/u/0/115942148827374377976"><i class="fa fa-google-plus"></i></a></li>
+                                  <li><a href="https://www.instagram.com/pritecgrupo/"><i class="fa fa-instagram"></i></a></li>
+                                  <!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+                              </ul>
+                          </aside>
                         </div>
                         <div class="col-lg-6 col-md-12">
-                            <aside class="f_widget contact_widget">
+                            <!-- <aside class="f_widget contact_widget"> -->
+                            <aside class="f_w_title">
+                                <!-- <div class="f_w_title">-->
                                 <div class="f_w_title">
                                     <h3>Contacto</h3>
                                 </div>
-                                <a href="#">(+34) 902 88 66 98 | (+34) 96 582 00 02<br></a>
-                                <a href="#">pritec@pritec.com<br></a>
-                                <p>Avda. de la Electrónica, s/n<br>
-                                Canyada de Biar. ALACANT (SPAIN)</p>
-                                <h6>Abierto de 9:00- 13:00h y de 15:30 a 19.00 Lunes-Viernes</h6>
+                                <!-- </div> -->
+                                <a style="color:white;">Tel. (+34) 902 88 66 98 |  Tel. (+34) 96 582 00 02.<br></a>
+                                <a style="color:#F43535;" href="mailto:pritec@pritec.com?Subject=Contacto%20desde%20la%20web">pritec@pritec.com<br></a>
+                                <br>
+                                <p style="color:white;">Avda. de la Electrónica, s/n.<br>
+                                Canyada de Biar. ALACANT (SPAIN).</p>
+                                <br>
+                                <p style="color:white;">Abierto de 8:00 a 13:30h y de 15:00 a 19.00 Lunes-Jueves.</p>
+                                <p style="color:white;">Abierto de 8:00 a 14:00h Viernes.</p>
                             </aside>
+
                         </div>
                     </div>
                 </div>
