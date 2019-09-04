@@ -78,59 +78,6 @@
           -o-transform: scale(.9);
         }
 
-        #cajacookies {
-          box-shadow: 0px 0px 5px 5px #808080;
-          background-color: white;
-          color: black;
-          padding: 10px;
-          margin-left: -15px;
-          margin-right: -15px;
-          margin-bottom: 70px;
-          position: fixed;
-          top: 0px;
-          width: 100%;
-        }
-
-        #cajacookies button {
-          color: black;
-        }
-
-        .chek input{
-          /*
-          width: 200px;
-          padding: 60px;
-          background: #daaa4d;
-          */
-        }
-
-        input[type=checkbox]
-        {
-          /* Double-sized Checkboxes */
-          -ms-transform: scale(.5); /* IE */
-          -moz-transform: scale(.5); /* FF */
-          -webkit-transform: scale(.5); /* Safari and Chrome */
-          -o-transform: scale(.5); /* Opera */
-          transform: scale(.5);
-          /* padding: 60px;
-                    */
-          vertical-align: 5px;
-
-          margin-top: 3px; /* change to center it */
-          /*
-          background: #daaa4d;
-          border: none;
-          outline: none;
-          -webkit-box-shadow: none;
-          box-shadow: none;
-          height: 40px;
-          border-radius: 3px;
-          font-size: 12px;
-          color: #b5aec4;
-          width: 200px;
-          */
-        }
-
-
     </style>
 
 
@@ -544,9 +491,11 @@
                                       <input type="email" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" width="40%" required>
                                       <button class="btn btn-secondary submit_btn" type="submit">Suscribirse</button><br>
                                     </span>
-
-                                    <p>Acepto los términos del servicio <input type="checkbox" name="cb-terminosservicio" class="chek" required></p>
-
+                                    <br>
+                                    <label class="check-container">Acepto los términos del servicio.
+                                      <input type="checkbox" required>
+                                      <span class="checkmark"></span>
+                                    </label>
                                   </form>
                                 </div>
                                 <ul>
