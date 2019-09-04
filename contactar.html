@@ -36,44 +36,6 @@
         <![endif]-->
     </head>
 
-    <style type="text/css">
-
-    .chek input{
-      /*
-      width: 200px;
-      padding: 60px;
-      background: #daaa4d;
-      */
-    }
-
-    input[type=checkbox]
-    {
-      /* Double-sized Checkboxes */
-      -ms-transform: scale(.5); /* IE */
-      -moz-transform: scale(.5); /* FF */
-      -webkit-transform: scale(.5); /* Safari and Chrome */
-      -o-transform: scale(.5); /* Opera */
-      transform: scale(.5);
-      /* padding: 60px;
-                */
-      vertical-align: 5px;
-
-      margin-top: 3px; /* change to center it */
-      /*
-      background: #daaa4d;
-      border: none;
-      outline: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      height: 40px;
-      border-radius: 3px;
-      font-size: 12px;
-      color: #b5aec4;
-      width: 200px;
-      */
-    }
-
-    </style>
 
     <body>
 
@@ -122,17 +84,6 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24919.165831769777!2d-0.8242503786765467!3d38.67426434865933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee2738b440ee3a9a!2sPRITEC+Electronics!5e0!3m2!1ses!2ses!4v1564411972379!5m2!1ses!2ses" width="1200" height="530" frameborder="1" style="border:1" allowfullscreen>
                 </iframe>
               </div>
-              <!--
-                <div id="mapBox" class="mapBox row m0"
-                    data-lat="38.670898"
-                    data-lon="-0.821228"
-                    data-zoom="10"
-                    data-marker="img/map-marker.png"
-                    data-info="PRITEC Electronics"
-                    data-mlat="38.670898"
-                    data-mlon="-0.821228">
-                </div>
-              -->
                 <div class="contact_details_inner">
                     <div class="row">
                         <div class="col-lg-6">
@@ -221,10 +172,11 @@
                                   <span class="input-group-btn">
                                     <input type="email" name="email" class="form-control" placeholder="E-mail" aria-label="E-mail" width="40%" required>
                                     <button class="btn btn-secondary submit_btn" type="submit">Suscribirse</button>
-                                  </span>
-
-                                  <p>Acepto los términos del servicio <input type="checkbox" name="cb-terminosservicio" class="chek" required></p>
-
+                                    <br>
+                                    <label class="check-container">Acepto los términos del servicio.
+                                      <input type="checkbox" required>
+                                      <span class="checkmark"></span>
+                                    </label>
                                 </form>
                               </div>
                               <ul>
