@@ -2,8 +2,8 @@
 
     $to = "";
     $subject = "Nuevo usuario suscrito desde la web.";
-    $message = "Usuario suscrito a novedades PRITEC con el correo: " . htmlspecialchars($_POST['email']);
-    $headers = "From:" . "\r\n";
+    $message = "Usuario suscrito a novedades con el correo: " . htmlspecialchars($_POST['email']);
+    $headers = "From:" . "Web". "\r\n";
     mail($to, $subject, $message, $headers);
 
 ?>
@@ -14,9 +14,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="assets/favicon.png" rel="shortcut icon">
         <title>PRITEC Electronics</title>
-        <link rel="stylesheet" href="../css/bootstrap.css" >
+        <link rel="stylesheet" href="../css/bootstrap.min.css" >
         <!-- Mis estilos -->
-        <link rel="stylesheet" href="../css/styles.css" >
+        <link rel="stylesheet" href="../css/style.css" >
         <!-- Navegador -->
         <link rel="stylesheet" href="../css/navoverlay.css" >
         <!-- Botón Up -->
@@ -68,15 +68,16 @@
 			<div class="container">
 					<div class="row">
 
-						<div class="col-md-6 col-md-offset-3 active" style="text-align: center;">
-									<img src="logo.jpg" class="logo"/>
+						<div class="col-md-12 col-md-offset-3 active" style="text-align: center;">
+							<img src="logo.jpg" class="logo"/>
 							<h2>Gracias por suscribirse!</h2>
               <p>Recibirá información cuando publiquemos las siguientes novedades.</p>
+
 				</div>
 			</div>
 
   <div class="col-md-12" align="center">
-    <button type="submit" class="volverdeformulario" onclick="location.href='http://www.pritec.com'"/>
+    <button type="submit" class="volverdeformulario" onclick="location.href=''"/>
         <img src="volver.svg"/>
     </button>
   </div>
