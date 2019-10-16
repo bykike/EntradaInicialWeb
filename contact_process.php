@@ -1,6 +1,6 @@
 <?php
 
-  $to = "";
+  $to = "grafico@pritec.com";
   $from = $_REQUEST['email'];
   $name = $_REQUEST['name'];
   $subject = $_REQUEST['subject'];
@@ -15,7 +15,7 @@
 
   $subject = "Se ha recibido nuevo mensaje desde la web.";
 
-  $logo = 'logo.jpg';
+  $logo = 'http://www.pritec.com/suscripcion/logo.jpg';
   $link = '#';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Mensaje</title></head><body>";
